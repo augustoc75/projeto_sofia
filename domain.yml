@@ -6,7 +6,6 @@ intents:
   - diga_mais
   - tudo_bem
   - elogios
-
   - religiao
   - esporte
   - time
@@ -31,9 +30,9 @@ intents:
   - bff
   - historia
   - risada
-
   - action_test
   - apresentar
+  -siopdef
 
 entities:
   - religiao
@@ -59,6 +58,7 @@ entities:
   - hobby
   - bff
   - historia
+  - SIOP
 
 templates:
   utter_default:
@@ -417,6 +417,14 @@ templates:
         Meu nome é Sofia. Fui criada para auxiliar no atendimento de dúvidas do SIOP, Sistema Integrado
 
         de Planejamento e Orçamento do Governo Federal. Você tem alguma dúvida sobre o SIOP?
+        
+  utter_siopdef:
+    - text:
+        O SIOP é o sistema informatizado que suporta os processos de Planejamento e Orçamento do Governo Federal. 
+        
+        É o resultado da iniciativa de integração dos sistemas e processos a partir da necessidade de otimizar procedimentos
+        
+        reduzir custos, integrar e oferecer informações para o gestor público e para os cidadãos.
 
 actions:
   - utter_default
@@ -425,7 +433,6 @@ actions:
   - utter_tudo_bem
   - utter_diga_mais
   - utter_elogios
-
   - utter_religiao
   - utter_esporte
   - utter_time
@@ -451,6 +458,7 @@ actions:
   - utter_historia
   - utter_risada
   - utter_apresentar
-
+  
+  - utter_siopdef
   - action_test
   - action_fallback
