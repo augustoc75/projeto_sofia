@@ -411,15 +411,19 @@ templates:
         kkkkkkkkkk
 
         Você está feliz hoje, hein!?
+        
+  action_test: 
+    - text: |
+        Alô... alô... 1, 2, 3, testando...
 
   utter_apresentar:
-    - text:
+    - text: |
         Meu nome é Sofia. Fui criada para auxiliar no atendimento de dúvidas do SIOP, Sistema Integrado
 
         de Planejamento e Orçamento do Governo Federal. Você tem alguma dúvida sobre o SIOP?
         
   utter_siopdef:
-    - text:
+    - text: |
         O SIOP é o sistema informatizado que suporta os processos de Planejamento e Orçamento do Governo Federal. 
         
         É o resultado da iniciativa de integração dos sistemas e processos a partir da necessidade de otimizar procedimentos
@@ -457,8 +461,7 @@ actions:
   - utter_bff
   - utter_historia
   - utter_risada
-  - utter_apresentar
-  
-  - utter_siopdef
   - action_test
+  - utter_apresentar  
+  - utter_siopdef
   - action_fallback
