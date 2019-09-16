@@ -32,7 +32,7 @@ intents:
   - risada
   - action_test
   - apresentar
-  - siopdef
+  - Siopdef
 
 entities:
   - religiao
