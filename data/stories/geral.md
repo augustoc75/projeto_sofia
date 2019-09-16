@@ -18,7 +18,7 @@
 
 ## fallback
 * out_of_scope
-    - action_default_fallback
+    - action_fallback
 
 ## negar sem contexto
 * negar
