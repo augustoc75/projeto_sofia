@@ -33,6 +33,8 @@ intents:
   - action_test
   - apresentar
   - Siopdef
+  - Siop_historico
+  - janela_trabalho
 
 entities:
   - religiao
@@ -59,6 +61,7 @@ entities:
   - bff
   - historia
   - SIOP
+  - janela
 
 templates:
   utter_default:
@@ -429,6 +432,22 @@ templates:
         É o resultado da iniciativa de integração dos sistemas e processos a partir da necessidade de otimizar procedimentos
         
         reduzir custos, integrar e oferecer informações para o gestor público e para os cidadãos.
+        
+  utter_historico:
+    - text: |
+        O SIOP começou a ser desenvolvido em 2009 por iniciativa da SOF (Secretaria de Orçamento Federal do Ministério do Planejamento, Orçamento e Gestão) 
+        
+        em substituição ao antigo sistema usado para o Orçamento Federal, SIDOR. 
+        
+        A primeira menção oficial ao SIOP foi o MTO de 2010. Depois desta data o SIOP é regularmente citado nas LOA's e LDOs como o sistema institucional de suporte ao orçamento federal.
+        
+  utter_janela:  
+    - text: |
+        A janela de trabalho é o intervalo de tempo no qual é possível realizar uma ação no sistema. 
+        
+        Quem cria e ajusta as janelas de trabalho no SIOP são usuários com privilégios diferenciados. 
+        
+        As regras para realizar estas operações vão depender do módulo em uso.
 
 actions:
   - utter_default
@@ -464,4 +483,6 @@ actions:
   - action_test
   - utter_apresentar  
   - utter_siopdef
+  - utter_historico
+  - utter_janela
   - action_fallback
