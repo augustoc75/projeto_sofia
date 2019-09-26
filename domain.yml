@@ -34,6 +34,8 @@ intents:
   - apresentar
   - Siopdef
   - Siop_historico
+  - Siop_acesso
+  - Siop_senha
   - janela_trabalho
 
 entities:
@@ -61,6 +63,9 @@ entities:
   - bff
   - historia
   - SIOP
+  - acesso
+  - cadastro
+  - senha
   - janela
 
 templates:
@@ -135,8 +140,7 @@ templates:
   utter_esporte:
     - text: |
         Eu amo jogar futebol
-
-        Eu que ensinei o Pele a jogar bola haha
+       
 
     - text: |
         Falam que todo ser humano nasce Flamenguista
@@ -145,10 +149,10 @@ templates:
 
   utter_time:
     - text: |
-        Flamengo, sem sombra de dúvida
+        Palmeiras, sem sombra de dúvida
 
     - text: |
-        Melhor time do mundo disparado, Flamengooo!!!!
+        Maior campeão do Brasil, Palmeiras!!!!
 
   utter_linguagens:
     - text: |
@@ -440,6 +444,20 @@ templates:
         em substituição ao antigo sistema usado para o Orçamento Federal, SIDOR. 
         
         A primeira menção oficial ao SIOP foi o MTO de 2010. Depois desta data o SIOP é regularmente citado nas LOA's e LDOs como o sistema institucional de suporte ao orçamento federal.
+
+  utter_acesso:  
+    - text: |
+        O acesso aos usuários é fornecido por meio do Cadastrador Local do Órgão ao qual o usuário está vinculado. 
+        
+        Segue o endereço onde são exibidos os dados dos Cadastradores Locais: https://www1.siop.planejamento.gov.br/siopdoc/doku.php/gestao_de_usuarios_cadastrador_local:lista_cadastradores_locais
+        
+        Quanto ao formulário, pode ser baixado no seguinte endereço https://www1.siop.planejamento.gov.br/siopdoc/lib/exe/fetch.php/controle_acesso:fichacadastrosiop-sof.odt
+        
+  utter_senha:
+    - text: |
+        Então você pode seguir o procedimento de recuperação de senha, descrito em https://www1.siop.planejamento.gov.br/siopdoc/doku.php/ead-siop:manual_uso_basico_siop#da_recuperacao_de_senha_esqueceu_sua_senha
+        
+        A nova senha será encaminhada ao seu e-mail cadastrado no SIOP.     
         
   utter_janela:  
     - text: |
@@ -484,5 +502,7 @@ actions:
   - utter_apresentar  
   - utter_siopdef
   - utter_historico
+  - utter_acesso
+  - utter_senha
   - utter_janela
   - action_fallback
