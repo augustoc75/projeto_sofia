@@ -13,7 +13,3 @@
 ## Siop_senha
 * Siop_senha
     - utter_senha
-
-## janela_trabalho
-* janela_trabalho
-    - utter_janela	
