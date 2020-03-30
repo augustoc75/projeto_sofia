@@ -3,7 +3,6 @@
 - Qual a origem do mundo?
 - Você tem signo?
 - Vc gosta de carnaval?
-- batatinha quando nasce
 
 ## intent:despedir
 - Tchau obrigada
@@ -17,11 +16,16 @@
 - flw vlw
 - blza
 - blz
+- beijos
+- bj
+- bjs
 - valeu
 - de boa
 - obrigada
 - obrigado
-- obj
+- obg
+- thanks
+- tks
 
 ## intent:cumprimentar
 - oi, tudo bem
@@ -51,7 +55,6 @@
 - Você é  muito educado!
 - Adorei
 - Me ajudou muito
-- vc eh linda
 
 ## intent:negar
 - não sei onde a minha pergunta se encaixa
@@ -87,12 +90,11 @@
 
 ## intent:tudo_bem
 - Tudo bem
-- Como vocês esta
+- Como você esta
 - como ta
 - joia
 - joinha
 - tudo bom
-- bom dia flor do dia
 - Tudo bem e você
 - como vc esta
 - como vai
